@@ -46,6 +46,8 @@ git merge <branch>
 
 ## Delete Branch
 git branch --delete NAME
+### -a for all branches (including remote branches)
+git branch -a
 ### use -d if branches are free of conflicts branch will be deleted
 git branch -d NAME
 ### use -D will ignore conflicts & delete branch 
@@ -83,3 +85,19 @@ git push -u origin main # --set-upstream
 ### push all branches
 git push --all
 git branch --set-upstream-to <orgin/remote-branch>
+
+## Git Pull
+git pull
+combination of doing a fetch but also mergin the data that is in your remote repository
+
+## Clone
+git clone URL (with .git extention)
+makes a copy of the repository down to machine
+git fetch
+look at git hub and download that into the current project (gets information about remote repository but does not change any branches)
+git pull
+checking out a remote branch (make sure to set up an upstream link with git branch --set-upstream-to=origin/<branch> main (from main branch to remote branch))
+Ex. git branch --set-upstream-to=origin/main main
+    Branch 'main' set up to track remote branch 'main from 'origin'.
+
+Pull requests alls project users to comment and review potential changes to a site
