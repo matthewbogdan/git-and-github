@@ -18,8 +18,10 @@ git commit -amend —no-edit
 
 ## Log
 get log
-### visually easier to see all logs
+### easier list of all logs
 get log --oneline
+### visual representation of branches
+git log --graph
 
 ## Reset
 git reset hashid(from log)
